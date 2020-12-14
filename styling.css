@@ -1,22 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300;1,500&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
 
 body {
-    background-color:#F8F4E3;
-    max-width: 90VW;
-    margin: auto
+background-color:#F8F4E3;
+    max-height: 110vw;
+    max-width: 80VW;
+    margin: auto;
+    padding: 680px;
  }
 
 h1 {
-    font-size: 100px;
-    color: #0D1321: 
+    font-size: 65px;
+    color: #E63946;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
 }
 
 h2 {
-    font-size: 75px;
-    color: #E63946
+    font-size: 100px;
+    color: #0D1321;
+    font-family: 'Abril Fatface', cursive;
+    text-align: left;
+}
+
+h3 {
+    font-size: 55px;
+    color: #0D1321;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
 }
 
 p {
     font-size: 45px;
-    font-family: Poiret One;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
+
+.demopara {
+    line-height: 2 ;
+  }
