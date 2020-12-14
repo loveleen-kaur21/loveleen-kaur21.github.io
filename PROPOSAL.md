@@ -15,4 +15,5 @@ Wednesday:  Finish Styling with bootstrap and css for the rest of the pages.
 Thursday: Add media queries and clean up/ fix any problems. 
 
 
+<a href="https://ibb.co/R4QRmh6"><img src="https://i.ibb.co/84P1pzx/colorscheme.png" alt="colorscheme" border="0"></a>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/f40zcxR/portfoliodesign.png" alt="portfoliodesign" border="0"></a>
