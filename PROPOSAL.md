@@ -13,3 +13,6 @@ The user should be able to view a page with an image of myself, a short descript
 Tuesday: Have all the information laid down on the website in html. Start on CSS for the welcome page. 
 Wednesday:  Finish Styling with bootstrap and css for the rest of the pages. 
 Thursday: Add media queries and clean up/ fix any problems. 
+
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/f40zcxR/portfoliodesign.png" alt="portfoliodesign" border="0"></a>
