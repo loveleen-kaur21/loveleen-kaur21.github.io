@@ -14,45 +14,40 @@
   box-sizing: inherit;
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
 
 body {
   background-color: #f8f4e3;
 }
 
 h1 {
-  font-size: 65px;
+  font-size: 36px;
   color: #e63946;
   font-family: "Montserrat", sans-serif;
   text-align: left;
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 40px;
   color: #0d1321;
   font-family: "Abril Fatface", cursive;
   text-align: left;
 }
 
 h3 {
-  font-size: 55px;
+  font-size: 36px;
   color: #0d1321;
   font-family: "Montserrat", sans-serif;
   text-align: left;
 }
 
 p {
-  font-size: 45px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
-  text-align: center;
 }
 
 .demopara {
   line-height: 2;
+  padding: 2rem 4rem;
 }
 
 .nav {
@@ -78,17 +73,20 @@ nav ul {
 
 nav ul li a {
   color: #0d1321;
-  padding: 12px 30px;
+  padding: 22px 30px;
   text-decoration: none;
   line-height: 70px;
-  font-size: 60px;
+  font-size: 22px;
+  font-family: 'Poiret One';
 }
 
 ul li a {
-  font-size: 60px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
 }
 
-.skills {
+/* .skills {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -105,9 +103,93 @@ ul li a {
 
 div.biggerbio {
   text-align: left;
-}
-.welcome-section {
-  padding: 680px;
-  height: 100vh;
+} */
+
+#skillandbio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
+.welcome-section {
+  padding: 18rem 10rem;
+  height: 100vh;
+  text-align: center;
+}
+
+
+
+
+/* Projects section */
+
+.projects-grid p {
+  font-size: 10px;
+}
+
+.projects-section-header {
+  font-family: 'Open Sans';
+  font-size: 30px;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-pink);
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: #fac9c7;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: #260403;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
