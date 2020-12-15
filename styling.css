@@ -29,11 +29,11 @@ html {
 
 
 body {
-background-color:#F8F4E3;
-    max-height: 110vw;
-    max-width: 80VW;
-    margin: auto;
-    padding: 680px;
+  background-color:#F8F4E3;
+  max-height: 110vw;
+  max-width: 80VW;
+  margin: auto;
+  padding: 680px;
  }
 
 h1 {
@@ -66,3 +66,38 @@ p {
 .demopara {
     line-height: 2 ;
   }
+
+.nav {
+  display: flex;
+  list-style-type: disc;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #c2878f;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+/* a {
+  text-decoration: none;
+  font-size: 70px;
+  display: block;
+  padding: 2rem;
+  
+} */
+
+nav ul {
+  list-style: none;
+  float: right;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a { 
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 106px;
+}
