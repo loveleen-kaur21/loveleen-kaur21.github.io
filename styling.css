@@ -39,6 +39,12 @@ h3 {
   text-align: left;
 }
 
+h5 {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+
 p {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
@@ -189,4 +195,8 @@ ul li a {
 .svg {
   width: 82px;
   height: 86px;
+  padding: 1rem;
+  position: relative;
+  left: 400px;
 }
+
