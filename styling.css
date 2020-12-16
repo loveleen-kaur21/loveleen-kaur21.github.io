@@ -11,9 +11,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
-
 
 body {
   background-color: #f8f4e3;
@@ -50,6 +49,14 @@ p {
   padding: 2rem 4rem;
 }
 
+.purple-slice {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: purple;
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 30%);
+}
 .nav {
   display: flex;
   list-style-type: disc;
@@ -60,7 +67,7 @@ p {
   width: 100%;
   background: #c2878f;
   z-index: 10;
-  background-color:  transparent;
+  background-color: purple;
 }
 
 nav ul {
@@ -72,12 +79,12 @@ nav ul {
 }
 
 nav ul li a {
-  color: #0d1321;
+  color: #f8f4e3;
   padding: 22px 30px;
   text-decoration: none;
   line-height: 70px;
   font-size: 22px;
-  font-family: 'Poiret One';
+  font-family: "Poiret One";
 }
 
 ul li a {
@@ -86,24 +93,11 @@ ul li a {
   text-align: left;
 }
 
-/* .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  background-color: #495159;
-  padding: 0px;
-  height: 100vh;
+.image-me {
+  position: absolute;
+  right: 250px;
+  top: 100px; 
 }
-
-#skills {
-  font-size: 60px;
-  margin: auto;
-  text-align: right;
-}
-
-div.biggerbio {
-  text-align: left;
-} */
 
 #skillandbio {
   display: grid;
@@ -111,13 +105,11 @@ div.biggerbio {
 }
 
 .welcome-section {
-  padding: 18rem 10rem;
-  height: 100vh;
   text-align: center;
+  padding-top: 300px;
+  padding-bottom: 200px;
+  padding-left: 100px;
 }
-
-
-
 
 /* Projects section */
 
@@ -126,7 +118,7 @@ div.biggerbio {
 }
 
 .projects-section-header {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 30px;
 }
 
@@ -138,7 +130,7 @@ div.biggerbio {
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-pink);
+  border-bottom: 0.2rem solid var(#d05353);
 }
 
 @media (max-width: 28.75em) {
@@ -192,4 +184,9 @@ div.biggerbio {
 .project-title {
   font-size: 2rem;
   padding: 2rem 0.5rem;
+}
+
+.svg {
+  width: 82px;
+  height: 86px;
 }
