@@ -16,6 +16,8 @@
 
 body {
   background-color: #f8f4e3;
+  max-width: 100vw;
+  margin: auto;
 }
 
 h1 {
@@ -70,8 +72,7 @@ p {
   justify-content: flex-end;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
   z-index: 10;
   background-color: purple;
 }
@@ -143,7 +144,6 @@ ul li a {
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
 }
 
 .container {
@@ -180,10 +180,12 @@ ul li a {
 .projects-grid {
   display: grid;
   grid-template-areas:
-    "item1 item2 item3"
-    "item4 item5 .";
-  grid-gap: 4rem;
+    "item1 item2"
+    "item3 item4"
+    "item5 .";
+  grid-gap: 10px;
   margin: 0 auto;
+  margin-left: 180px;
   margin-bottom: 6rem;
 }
 
@@ -227,6 +229,11 @@ ul li a {
   transition: color 0.3s ease-out;
 }
 
+.project-image {
+  height: 250px;
+  width: 300px;
+}
+
 .project:hover .code {
   color: #ff7f50;
 }
@@ -240,7 +247,7 @@ ul li a {
 .project-description {
   font-size: 12px;
   padding: 2rem 0.5rem;
-  background-color: black;
+  background-color: #ef626c;
   z-index: ;
 }
 
@@ -294,8 +301,9 @@ a > span:after {
 .container {
   position: relative;
   margin-top: 50px;
-  width: 500px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
+
 }
 
 .container project-description {
@@ -309,8 +317,7 @@ a > span:after {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease;
 }
@@ -322,7 +329,7 @@ a > span:after {
 /* 
 img {
   position: absolute;
-  width: 500px;
+  width: 108px;
   height: 300px;
   left: 0;
 } */
