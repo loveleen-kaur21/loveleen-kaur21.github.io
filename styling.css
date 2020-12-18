@@ -20,6 +20,30 @@ body {
   margin: auto;
 }
 
+@media (min-width: 720px) {
+  h1 {
+    font-size: 36px;}
+  h2 {
+      font-size: 70px;}
+  h3 {
+      font-size: 28px;
+  }
+  h4 {
+    font-size: 36px;
+  }
+  h5 {
+    font-size: 36px;
+  }
+  h6 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 15px;
+  }
+  ul li {
+    font-size: 15px;
+}
+
 h1 {
   font-size: 36px;
   color: #0d1321;
@@ -41,15 +65,34 @@ h3 {
   text-align: left;
 }
 
+h4 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
 h5 {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
+  text-align: center;
+}
+
+h6 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 p {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
+}
+
+ul li {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif; 
+  text-align: center; 
+  list-style-position: inside;
 }
 
 .demopara {
@@ -101,9 +144,15 @@ ul li a {
 }
 
 .image-me {
-  /* position: absolute; */
+  /* position: relative; */
+  width: 500px;
   right: 250px;
   top: 100px;
+
+}
+
+.skills {
+  padding: 150px;
 }
 
 #skillandbio {
@@ -136,16 +185,19 @@ ul li a {
   font-family: "Open Sans";
   font-size: 30px;
   max-width: 640px;
-  margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(#d05353);
   position: relative;
-  left: 170px;
+  left: 320px;
 }
 
 .projects-section {
   text-align: center;
 }
 
+.contact {
+  position: relative;
+  left: 100px;
+}
 .container {
   position: relative;
   height: 120%;
@@ -160,7 +212,8 @@ ul li a {
 }
 
 .button {
-  transform: translateY(10%);
+  transform: translateY(-600%);
+  transform: translateX(-15%);
   position: absolute;
   width: 500px;
   left: 0;
@@ -169,6 +222,7 @@ ul li a {
   opacity: 0;
   transition: opacity 0.35s ease;
   display: none;
+  margin-top: -110px;
 }
 /* @media (max-width: 28.75em) {
   .projects-section-header {
@@ -189,15 +243,9 @@ ul li a {
   margin-bottom: 6rem;
 }
 
-/* @media (min-width: 8000px) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-} */
+
+
 #item1 {
   grid-area: item1;
 }
@@ -325,9 +373,9 @@ a > span:after {
   display: block;
   background: rgba(0, 0, 0, 0.3);
 }
-/* 
-img {
-  position: absolute;
+
+/* img {
+  position: relative;
   width: 108px;
   height: 300px;
   left: 0;
@@ -335,9 +383,8 @@ img {
 
 .title {
   position: absolute;
-  width: 500px;
-  left: 0;
-  top: 120px;
+  max-width: 400px;
+  margin: auto;
   font-weight: 700;
   font-size: 35px;
   text-align: center;
@@ -372,4 +419,8 @@ img {
 
 .container:hover .button {
   opacity: 1;
+}
+
+@media only screen and (max-width : 667px) {
+  
 }
