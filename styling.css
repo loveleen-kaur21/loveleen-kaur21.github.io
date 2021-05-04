@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 * {
   margin: 0;
@@ -15,7 +19,7 @@
 }
 
 body {
-  background-color: #f8f4e3;
+  background-color: #FFEBE7;
   max-width: 100%;
   width: 100vw;
   margin: auto;
@@ -45,7 +49,7 @@ body {
     font-size: 15px;
   }
   nav ul li a {
-    color: #f8f4e3;
+    color: #FFEBE7;
     padding: 22px 30px;
     text-decoration: none;
     line-height: 70px;
@@ -69,6 +73,7 @@ body {
   #skillandbio {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
   }
 
   .projects-section-header {
@@ -80,7 +85,6 @@ body {
     left: 320px;
   }
   .contact {
-  position: relative;
   left: 100px;
 }
 .container {
@@ -115,7 +119,7 @@ body {
 
 
 .header {
-  background-color: #f8f4e3;
+  background-color: #FFEBE7;
   height: 5em;
   text-align: center;
 }
@@ -124,7 +128,7 @@ body {
 
 .main {
   width: 100%;
-  background-color: #f8f4e3;
+  background-color: #FFEBE7;
 }
 
 
@@ -132,7 +136,7 @@ body {
   width: 90%;
   margin: 0 auto;
   padding: 0.5em 0;
-  background-color: #f8f4e3;
+  background-color: #FFEBE7;
 }
 
 .project {
@@ -237,7 +241,7 @@ a {
 .project-description {
   font-size: 12px;
   padding: 3rem 0.5rem;
-  background-color: #ef626c;
+  background-color: #FF6978;
 }
 
 .svg {
@@ -259,20 +263,19 @@ a {
 h1 {
   font-size: 36px;
   color: #0d1321;
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: 'Shadows Into Light Two', cursive;}
 
 h2 {
   font-size: 70px;
-  color: #ef626c;
-  font-family: "Abril Fatface", cursive;
+  color: #FF6978;
+  font-family: 'Lobster', cursive;      
   text-align: left;
 }
 
 h3 {
   font-size: 28px;
   color: #0d1321;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Cantarell', sans-serif;
   text-align: left;
 }
 
@@ -284,8 +287,8 @@ h4 {
 
 h5 {
   font-size: 36px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
+  font-family: 'Cantarell', sans-serif;
+    text-align: center;
 }
 
 h6 {
@@ -317,13 +320,13 @@ ul li {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #1d2951;
+  background: #272D2D;
   clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 23%);
   z-index: -1;
 }
 
 .nav {
-  background-color: #1d2951;
+  background-color: #272D2D;
   z-index: 2;
 }
 
@@ -359,10 +362,7 @@ ul li a {
   padding: 150px;
 }
 
-#skillandbio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .welcome-section {
   position: relative;
@@ -378,11 +378,6 @@ ul li a {
   padding-right: 2rem;
 }
 
-/* Projects section */
-
-/* .project-description > p {
-  font-size: 12px;
-} */
 
 .projects-section-header {
   font-family: "Montserrat", sans-serif;
@@ -398,7 +393,6 @@ ul li a {
 }
 
 .contact {
-  position: relative;
   left: 100px;
 }
 .container {
@@ -427,53 +421,9 @@ ul li a {
   display: none;
   margin-top: -110px;
 }
-/* @media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-} */
-
-/* "Automagic" image grid using no media queries */
-.projects-grid {
-  display: grid;
-  grid-template-areas:
-    "item1 item2"
-    "item3 item4"
-    "item5 .";
-  grid-gap: 10px;
-  margin: 0 auto;
-  margin-left: 180px;
-  margin-bottom: 6rem;
-}
 
 
 
-
-#item1 {
-  grid-area: item1;
-}
-
-#item2 {
-  grid-area: item2;
-}
-
-#item3 {
-  grid-area: item3;
-}
-
-#item4 {
-  grid-area: item4;
-}
-
-#item5 {
-  grid-area: item5;
-}
-
-.project {
-  background: #ef626c;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
 
 .code {
   color: #260403;
@@ -498,7 +448,7 @@ ul li a {
 .project-description {
   font-size: 12px;
   padding: 2rem 0.5rem;
-  background-color: #ef626c;
+  background-color: #FF6978;
 }
 
 .svg {
@@ -546,42 +496,6 @@ a > span:after {
   transform: scale(1, 1);
 }
 
-/* #Codepen */
-
-.container {
-  position: relative;
-  margin-top: 50px;
-  width: 350px;
-  height: 250px;
-}
-
-.container project-description {
-  font-size: 12px;
-  padding: 2rem 0.5rem;
-  width: 500px;
-  margin-left: 0;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
-}
-
-.container:hover .overlay {
-  display: block;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-/* img {
-  position: relative;
-  width: 108px;
-  height: 300px;
-  left: 0;
-} */
 
 .title {
   max-width: 400px;
@@ -669,7 +583,7 @@ a > span:after {
   }
 
   nav ul li a {
-    color: #f8f4e3;
+    color: #FFEBE7;
     padding: 11px 15;
     text-decoration: none;
     line-height: 35px;
@@ -709,7 +623,6 @@ a > span:after {
     margin-top: 30px;
   }
   .contact {
-  position: relative;
   left: 50px;
 }
 .container {
@@ -719,13 +632,7 @@ a > span:after {
   overflow: hidden;
 }
 
-/* .hide {
-  display: none;
-}
 
-img:hover + .hide, .hide:hover {
-  display: inline-block
-} */
 
 .des .btn {
   position: absolute;
@@ -775,6 +682,9 @@ img:hover + .hide, .hide:hover {
   padding: 0px !important;
 }
 
+body{
+  background-color: white;
+}
 #skillandbio {
   display: block;
   margin-left: 32px;
@@ -801,13 +711,7 @@ img:hover + .hide, .hide:hover {
   align-items: center;
   align-content: center;
 }
-.card{
-  width: 39%;
-  display: inline-block;
-  border-style: 2px black;
-  border-radius: 5px; 
-  margin: 4%;
-}
+
 .card-title{
   text-align: center;
 }
@@ -817,14 +721,21 @@ img:hover + .hide, .hide:hover {
   border-top-left-radius: 5px;
 }
 .card {
+  width: 39%;
+  display: inline-block;
+  border-style: 2px black;
+  border-radius: 5px; 
+  margin: 4%;
   padding: 1em;
   text-align: center;
   border-radius: 2px;
   border-color: rgba(31, 31, 31, 0.95);
+  /* background-color:  #FF6978; */
 }
 .card-content h8 {
   text-align: center;
 }
+
 #projects .card-title {
   padding: 0;
   font-family: 'Lora', serif;
@@ -836,6 +747,7 @@ img:hover + .hide, .hide:hover {
   padding-top: 10px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  background-color: #6F7878;
 }
 
 .btn {
@@ -845,3 +757,7 @@ img:hover + .hide, .hide:hover {
   border-radius: 5px;
   padding: 12px;
   }
+
+footer {
+  position: absolute;
+}
