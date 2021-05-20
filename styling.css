@@ -56,6 +56,13 @@ body {
     font-size: 22px;
     font-family: "Poiret One";
   }
+
+  #projectHeader {
+    font-size: 36px;
+    font-family: 'Cantarell', sans-serif;
+  }
+  
+
   ul li a {
     font-size: 10px;
     font-family: "Open Sans", sans-serif;
@@ -297,11 +304,12 @@ h4 {
   text-align: center;
 }
 
-h5 {
+.title-header {
   font-size: 36px;
   font-family: 'Cantarell', sans-serif;
     text-align: center;
 }
+
 
 h6 {
   font-size: 36px;
@@ -819,3 +827,5 @@ background-color:#FFFFFF;
     50%{top:0em}
     100%{top:0em;}
   }
+
+  
