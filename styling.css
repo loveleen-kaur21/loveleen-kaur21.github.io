@@ -56,6 +56,13 @@ body {
     font-size: 22px;
     font-family: "Poiret One";
   }
+
+  #projectHeader {
+    font-size: 36px;
+    font-family: 'Cantarell', sans-serif;
+  }
+  
+
   ul li a {
     font-size: 10px;
     font-family: "Open Sans", sans-serif;
@@ -84,8 +91,16 @@ body {
     position: relative;
     left: 320px;
   }
-  .contact {
-  left: 100px;
+  #contact {
+    padding: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#contact-icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container {
   display: flex;
@@ -245,20 +260,24 @@ a {
 }
 
 .svg {
-  width: 82px;
-  height: 86px;
-  padding: 1rem;
+  width: 42px;
+  height: 46px;
   position: relative;
-  left: 400px;
+  margin-right: 10px;
+
 }
 
+.contact-icons {
+  margin-right: 20px;
+  margin-left: 20px;
+}
 .container project-description {
   font-size: 12px;
   padding: 2rem 0.5rem;
   width: 500px;
   margin-left: 0;
 }
-}
+
 
 h1 {
   font-size: 36px;
@@ -285,11 +304,12 @@ h4 {
   text-align: center;
 }
 
-h5 {
+.title-header {
   font-size: 36px;
   font-family: 'Cantarell', sans-serif;
     text-align: center;
 }
+
 
 h6 {
   font-size: 36px;
@@ -393,7 +413,7 @@ ul li a {
 }
 
 .contact {
-  left: 100px;
+  align-items: center;
 }
 .container {
   position: relative;
@@ -456,7 +476,9 @@ ul li a {
   height: 86px;
   padding: 1rem;
   position: relative;
-  left: 400px;
+  margin-right: 10px;
+
+  /* left: 400px; */
 }
 
 a,
@@ -730,6 +752,7 @@ body{
   text-align: center;
   border-radius: 2px;
   border-color: rgba(31, 31, 31, 0.95);
+  color: white;
   /* background-color:  #FF6978; */
 }
 .card-content h8 {
@@ -738,8 +761,9 @@ body{
 
 #projects .card-title {
   padding: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Cantarell', sans-serif;
   font-size: 20px;
+  
 }
 .des{
   padding: 30px;
@@ -759,5 +783,49 @@ body{
   }
 
 footer {
-  position: absolute;
+  align-items: center;
 }
+
+
+
+
+/* view buttons */
+a.button1 {
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+}
+a.button1:hover{
+color: #000000;
+background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+   a.button1{
+    display:block;
+    margin:0.4em auto;
+}
+}
+
+.bouncy{
+  animation:bouncy 5s infinite linear;
+  position:relative;
+  }
+  @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+  }
+
+  
